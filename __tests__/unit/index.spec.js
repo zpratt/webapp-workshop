@@ -5,27 +5,26 @@ import { rest } from "msw";
 import Home from "@/pages/index";
 
 describe("home page", () => {
-    let imageName, server;
+    let favoritePizza, server;
 
     beforeEach(() => {
-        imageName = "foo";
+        favoritePizza = "veggie";
+
+        const responseBody = {
+            pizzas: [
+                {
+                    id: 1,
+                    name: favoritePizza,
+                    size: "Large",
+                    created: "2023-03-01 12:00:00",
+                },
+            ],
+        };
 
         server = setupServer(
-            rest.get("/api/images", (req, res, ctx) => {
-                return res(
-                    ctx.json({
-                        images: [
-                            {
-                                id: 1,
-                                name: imageName,
-                                tag: "1.0",
-                                size: "100MB",
-                                created: "2023-03-01 12:00:00",
-                                vulnerabilities: 10,
-                            },
-                        ],
-                    })
-                );
+            rest.get("/api/pizzas", (req, res, ctx) => {
+                console.log("pizzas called");
+                return res(ctx.json(responseBody));
             })
         );
         server.listen();
@@ -37,6 +36,6 @@ describe("home page", () => {
 
     it("should render the list of images", async () => {
         render(<Home />);
-        await screen.findAllByText(imageName);
+        await screen.findAllByText(favoritePizza);
     });
 });

@@ -1,15 +1,16 @@
-const nextJest = require('next/jest');
+const nextJest = require("next/jest");
 
 const configBuilder = nextJest({
-    dir: './'
+    dir: "./",
 });
 
 const moduleMapper = {
-    '@/(.*)$': '<rootDir>/src/$1'
+    "@/(.*)$": "<rootDir>/src/$1",
 };
 module.exports = configBuilder({
-    moduleDirectories: ['node_modules', 'src'],
+    moduleDirectories: ["node_modules", "src"],
+    testPathIgnorePatterns: ["/integration/"],
     moduleNameMapper: moduleMapper,
-    testEnvironment: 'jest-environment-jsdom',
-    setupFilesAfterEnv: ['<rootDir>/jest.setup.js']
+    testEnvironment: "jest-environment-jsdom",
+    setupFilesAfterEnv: ["<rootDir>/jest.setup.js"],
 });

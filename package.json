@@ -11,7 +11,7 @@
     "codeceptjs:headless": "HEADLESS=true codeceptjs run --steps",
     "codeceptjs:ui": "codecept-ui --app",
     "test:integration": "concurrently -s first -k \"npm run dev\" \"npm run codeceptjs\"",
-    "test:unit": "jest __tests__/unit/**.js",
+    "test:unit": "jest",
     "test": "npm run test:unit && npm run test:integration"
   },
   "dependencies": {
