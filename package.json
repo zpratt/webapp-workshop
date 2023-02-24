@@ -37,5 +37,22 @@
     "msw": "1.1.0",
     "playwright": "^1.31.1",
     "whatwg-fetch": "3.6.2"
-  }
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "src/pages/index.js",
+  "keywords": [
+    "nextjs",
+    "webapp",
+    "tutorial"
+  ],
+  "author": "zach pratt",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zpratt/webapp-workshop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zpratt/webapp-workshop/issues"
+  },
+  "homepage": "https://github.com/zpratt/webapp-workshop#readme"
 }
