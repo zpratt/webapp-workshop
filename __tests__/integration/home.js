@@ -16,7 +16,7 @@ Scenario("load page, see pizzas", ({ I }) => {
     I.saveScreenshot("see-pizzas.png", true);
 });
 
-Scenario("load page, search, click on favorite pizza", ({ I }) => {
+Scenario("load page and search for favorite", ({ I }) => {
     I.fillField("[name=search]", favoritePizza);
     I.see(favoritePizza);
 
@@ -24,6 +24,13 @@ Scenario("load page, search, click on favorite pizza", ({ I }) => {
         I.dontSee(pizza);
     });
 
+    I.saveScreenshot("search.png", true);
+});
+
+Scenario("load page, search, click on favorite pizza", ({ I }) => {
+    I.fillField("[name=search]", favoritePizza);
+    I.see(favoritePizza);
+
     I.click(favoritePizza);
-    I.saveScreenshot("search-click-node.png", true);
+    I.saveScreenshot("search-click.png", true);
 });
