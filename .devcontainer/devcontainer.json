@@ -15,8 +15,7 @@
             "extensions": [
                 "dbaeumer.vscode-eslint",
                 "esbenp.prettier-vscode",
-                "editorconfig.editorconfig",
-                "k--kato.intellij-idea-keybindings"
+                "editorconfig.editorconfig"
             ],
             "settings": {
                 "editor.formatOnSave": true,
