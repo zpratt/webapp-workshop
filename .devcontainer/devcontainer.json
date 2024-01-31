@@ -1,6 +1,6 @@
 {
     "name": "Node.js",
-    "image": "mcr.microsoft.com/devcontainers/javascript-node:0-18-bullseye",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:18-bookworm",
     "features": {
         "ghcr.io/devcontainers/features/github-cli:1": {},
         "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
