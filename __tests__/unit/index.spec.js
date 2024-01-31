@@ -34,7 +34,7 @@ describe("home page", () => {
         server.close();
     });
 
-    it("should render the list of images", async () => {
+    it("should render the list of pizzas", async () => {
         render(<Home />);
         await screen.findAllByText(favoritePizza);
     });
