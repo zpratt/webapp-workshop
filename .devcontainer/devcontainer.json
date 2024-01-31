@@ -15,7 +15,8 @@
             "extensions": [
                 "dbaeumer.vscode-eslint",
                 "esbenp.prettier-vscode",
-                "editorconfig.editorconfig"
+                "editorconfig.editorconfig",
+                "orta.vscode-jest"
             ],
             "settings": {
                 "editor.formatOnSave": true,
