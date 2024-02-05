@@ -32,5 +32,4 @@ yarn-error.log*
 .vercel
 
 .idea
-.vscode
 output

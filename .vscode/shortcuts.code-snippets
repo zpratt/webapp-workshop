@@ -1,0 +1,14 @@
+{
+    "Arrow Function": {
+        "scope": "javascript,typescript",
+        "prefix": "arr",
+        "body": ["(($1) => {$2})"],
+        "description": "Log output to console"
+    },
+    "Use Effect": {
+        "scope": "javascript,typescript",
+        "prefix": "usee",
+        "body": ["useEffect(() => {$2}, [$1]);"],
+        "description": "Log output to console"
+    }
+}
