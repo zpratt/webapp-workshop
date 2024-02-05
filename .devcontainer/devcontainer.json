@@ -16,7 +16,9 @@
                 "dbaeumer.vscode-eslint",
                 "esbenp.prettier-vscode",
                 "editorconfig.editorconfig",
-                "orta.vscode-jest"
+                "orta.vscode-jest",
+                "ms-vscode-remote.remote-containers",
+                "GitHub.codespaces"
             ],
             "settings": {
                 "editor.formatOnSave": true,
