@@ -31,6 +31,18 @@
                 "jest.autoRun": {
                     "watch": false
                 }
+            },
+            "launch": {
+                "configurations": [
+                    {
+                        "name": "Start Local",
+                        "type": "node",
+                        "request": "launch",
+                        "runtimeExecutable": "npm",
+                        "runtimeArgs": ["run", "dev"],
+                        "cwd": "${workspaceFolder}"
+                    }
+                ]
             }
         }
     }
