@@ -19,31 +19,7 @@
                 "orta.vscode-jest",
                 "ms-vscode-remote.remote-containers",
                 "GitHub.codespaces"
-            ],
-            "settings": {
-                "editor.formatOnSave": true,
-                "editor.defaultFormatter": "esbenp.prettier-vscode",
-                "editor.codeActionsOnSave": {
-                    "source.fixAll.eslint": "always"
-                },
-                "files.autoSave": "onFocusChange",
-                "jest.jestCommandLine": "npm run test --",
-                "jest.autoRun": {
-                    "watch": false
-                }
-            },
-            "launch": {
-                "configurations": [
-                    {
-                        "name": "Start Local",
-                        "type": "node",
-                        "request": "launch",
-                        "runtimeExecutable": "npm",
-                        "runtimeArgs": ["run", "dev"],
-                        "cwd": "${workspaceFolder}"
-                    }
-                ]
-            }
+            ]
         }
     }
 }
