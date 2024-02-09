@@ -27,7 +27,7 @@
                     "source.fixAll.eslint": "always"
                 },
                 "files.autoSave": "onFocusChange",
-                "jest.jestCommandLine": "npm test",
+                "jest.jestCommandLine": "npm run test --",
                 "jest.autoRun": {
                     "watch": false
                 }
