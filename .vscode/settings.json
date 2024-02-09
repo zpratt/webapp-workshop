@@ -1,0 +1,12 @@
+{
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "always"
+    },
+    "files.autoSave": "onFocusChange",
+    "jest.jestCommandLine": "npm run test --",
+    "jest.autoRun": {
+        "watch": false
+    }
+}
