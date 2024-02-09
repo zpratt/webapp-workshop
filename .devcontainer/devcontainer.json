@@ -24,9 +24,13 @@
                 "editor.formatOnSave": true,
                 "editor.defaultFormatter": "esbenp.prettier-vscode",
                 "editor.codeActionsOnSave": {
-                    "source.fixAll.eslint": true
+                    "source.fixAll.eslint": "always"
                 },
-                "files.autoSave": "onFocusChange"
+                "files.autoSave": "onFocusChange",
+                "jest.jestCommandLine": "npm test",
+                "jest.autoRun": {
+                    "watch": false
+                }
             }
         }
     }
