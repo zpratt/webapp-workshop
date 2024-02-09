@@ -2,7 +2,7 @@
     "Arrow Function": {
         "scope": "javascript,typescript",
         "prefix": "arr",
-        "body": ["(($1) => {$2})"],
+        "body": ["($1) => {$2}"],
         "description": "Log output to console"
     },
     "Use Effect": {
